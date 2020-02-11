@@ -26,9 +26,9 @@ setProducts = () => {
    
     })
     this.setState(()=> {
-        return {products:tempProducts}
-    })
-}
+        return {products:tempProducts};
+    });
+};
 
 // Get the item according to Id
 getItem = (id) => {
@@ -62,7 +62,7 @@ handleDetail = (id) => {
     },
     ()=>{
       console.log(this.state);
-    })
+    });
  }; 
 
  openModal = (id) => {
@@ -75,8 +75,8 @@ handleDetail = (id) => {
 closeModal = () => {
   this.setState(()=>{
       return {modalOpen: false};
-  })
-}
+  });
+};
 
     render() {
         return (
