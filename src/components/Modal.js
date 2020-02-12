@@ -10,7 +10,7 @@ export default class Modal extends Component {
         <ProductConsumer>
             {(value)=>{
                 const {modalOpen, closeModal} = value;
-                const {img, title, price} = value.modalProduct;
+                const {img, title, price} = value.modalProduct; // this is gonna showed when modal is open
 
                 if(!modalOpen){
                     return null;
@@ -30,7 +30,7 @@ export default class Modal extends Component {
                                         </ButtonContainer>
                                     </Link>
                                     <Link to='/cart'>
-                                        <ButtonContainer onClick={()=>closeModal()}>
+                                        <ButtonContainer cart onClick={()=>closeModal()}>
                                             go to cart
                                         </ButtonContainer>
                                     </Link>
