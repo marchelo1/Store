@@ -9,12 +9,12 @@ class ProductProvider extends Component {
 state={
     products: [],
     detailProduct: detailProduct,
-    cart: [],
+    cart: storeProducts,
     modalOpen: false,
     modalProduct: detailProduct,
-    cartSubTotal: 0,
-    cartTax: 0,
-    cartTotal: 0
+    cartSubTotal: 20,
+    cartTax: 10,
+    cartTotal: 30
 };
 
 componentDidMount(){
@@ -83,7 +83,7 @@ closeModal = () => {
 increment = (id) => {
   console.log('this is increment method');
 }
-decrament = (id) => {
+decrement = (id) => {
   console.log('this is decrament method');
 }
 removeItem = (id) => {
