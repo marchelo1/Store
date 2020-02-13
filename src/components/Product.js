@@ -35,7 +35,7 @@ export default class Product extends Component {
                     In Cart
                   </p>
                 ) : (
-                  <i className="fas fa-cart-plus" />
+                  <i className="fas fa-cart-arrow-down"></i>
                 )}
               </button>
             </div>)}
