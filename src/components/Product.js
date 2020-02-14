@@ -12,7 +12,7 @@ export default class Product extends Component {
         <div className="card">
           <ProductConsumer>
           {(value)=> (<div
-              className="img-container p-5"
+              className="img-container p-3"
               onClick={() => 
                 value.handleDetail(id) // Showing a particular item of particular monitor
               }
